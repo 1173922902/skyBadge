@@ -100,7 +100,7 @@ function startSky() {
                             break;
                         case "delete":
                             // let len = Object.keys(menu_map).length;
-                            if (len > Object.keys(getMainMenu()).length) {
+                            if (len > Object.keys(getMainMenu()).length + 1) {
                                 delete_options = [];
                                 storage_map = {};
                                 Object.keys(menu_map).map(function (key, index) {
@@ -128,7 +128,7 @@ function startSky() {
                             // 更新徽章次数
                             // let len = Object.keys(menu_map).length;
                             console.log("len => " + len + " menuLen => " + Object.keys(getMenu()).length);
-                            if (len > Object.keys(getMainMenu()).length) {
+                            if (len > Object.keys(getMainMenu()).length + 1) {
                                 update_options = [];
                                 storage_map = {};
                                 Object.keys(menu_map).map(function (key, index) {
@@ -177,7 +177,7 @@ function startSky() {
                             // 变更徽章位置
                             // let len = Object.keys(menu_map).length;
                             console.log("len => " + len + " menuLen => " + Object.keys(getMenu()).length);
-                            if (len > Object.keys(getMainMenu()).length) {
+                            if (len > Object.keys(getMainMenu()).length + 1) {
                                 let sort_options = [];
                                 let storage_map = global_option;//初始化
                                 Object.keys(menu_map).map(function (key, index) {
@@ -231,7 +231,7 @@ function startSky() {
                     startSky();
                     break;
                 case "auto":
-                    if (len > Object.keys(getMainMenu()).length) {
+                    if (len > Object.keys(getMainMenu()).length + 1) {
                         auto_options = [];
                         //storage_map = {};
                         Object.keys(menu_map).map(function (key, index) {
